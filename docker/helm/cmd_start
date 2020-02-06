@@ -1,6 +1,0 @@
-#!/bin/bash
-set -o errexit
-set -o xtrace
-
-echo "Running command: sleep infinity"
-exec sleep infinity
