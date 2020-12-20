@@ -1,0 +1,16 @@
+#!/bin/bash
+set -o errexit
+set -o xtrace
+
+if [[ ! -d "/etc/kubez-nginx" ]]; then
+    mkdir -p /etc/kubez-nginx
+fi
+
+if [[ ! -d "/etc/kubez-nginx/logs" ]]; then
+    mkdir -p /etc/kubez-nginx/logs
+fi
+
+/kube-nginx -c /etc/kubez-nginx/kubez-nginx.conf -p /etc/kubez-nginx
+
+echo "Running command: sleep infinity"
+exec sleep infinity
