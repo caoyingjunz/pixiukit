@@ -6,4 +6,6 @@ COPY kubez_start /kubez_start
 
 RUN chmod +x /kubez_start
 
+USER root:root
+
 CMD ["/kubez_start"]
