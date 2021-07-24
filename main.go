@@ -72,6 +72,6 @@ var (
 func init() {
 	flag.StringVar(&kubeconfig, "kubeconfig", "", "Path to a kubeconfig. Only required if out-of-cluster.")
 	flag.StringVar(&name, "name", Service, "service name")
-	flag.StringVar(&namespace, "namesapce", NameSpace, "service namespace")
+	flag.StringVar(&namespace, "namespace", NameSpace, "service namespace")
 	flag.StringVar(&externalIP, "externalip", "", "service external ip")
 }
