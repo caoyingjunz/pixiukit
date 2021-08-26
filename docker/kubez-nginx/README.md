@@ -33,7 +33,7 @@ stream {
 
 - 启动代理服务
 ```
-docker run -d --name <container_name> -v /var/lib/kubez-nginx/:/etc/kubez-nginx/ --net host jacky06/kubez-nginx:v1.0.0
+docker run -d --name <container_name> --privileged=true -v /var/lib/kubez-nginx/:/etc/kubez-nginx/ --net host jacky06/kubez-nginx:v1.0.0
 ```
 
 - 检查服务已经正常启动
